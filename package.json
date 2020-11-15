@@ -1,0 +1,20 @@
+{
+  "name": "emma-node-challenge",
+  "version": "1.0.0",
+  "description": "code for emma nodejs challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alaa Chaaban",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
+    "moment": "^2.29.1",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.0"
+  }
+}
