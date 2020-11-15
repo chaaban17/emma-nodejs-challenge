@@ -16,7 +16,7 @@ it is more or less an imitation of the interactive tutorial found at: https://tr
 1. define the model: choose the dialect (in my case sqlite), and the path of the storage in storage:''.
 2. Initialize the columns and the table; I used 3 columns: key column, value column and expiresOn column, the first 2 are self explanatory, the expiresOn column is used for data persistence which will be discussed later in detail.
 3. set function: I used [upsert](https://sequelize.org/master/class/lib/model.js~Model.html#static-method-upsert) to insert/update a single key/value pair; for data persistence, I used [moment](https://momentjs.com/) to get the current time, then, the time interval inputted by the user will be added to the current time.
-4. get function: before retrieving a value for a key, this method checks for any expired data, by comparing the current time with the expiresOn time wich was set by the set() funciton. Think of it as an SQL statement (DELETE * From Table Where 'expiresOn' < 'Current time'. This way, the code gurantees data persistance. 
+4. get function: before retrieving a value for a key, this method checks for any expired data by comparing the current time with the expiresOn time wich was set by the set() function. Think of it as an SQL statement (DELETE * From Table Where 'expiresOn' < 'Current time'. This way, the code gurantees data persistance. 
 5. Interaction with the user: I used [Inquirer](https://www.npmjs.com/package/inquirer) to let the user call the functions using the terminal.
 
 # Running the code
