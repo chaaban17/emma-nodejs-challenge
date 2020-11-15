@@ -5,7 +5,7 @@ it is more or less an imitation of the interactive tutorial found at: https://tr
 
 # Overview
 
-1. I used a framework called [Sequelize](https://sequelize.org/),this framework will make the class modular, scalabale and easy to extend to multiple databases. The DB used in this project is SQlite.
+1. I used a framework called [Sequelize](https://sequelize.org/),this framework will make the class modular, scalable and easy to extend to multiple databases. The DB used in this project is SQlite.
 
 2. Persistance: The storage supports persistance for a limited time, so the user can set a limited time in seconds to persist the data in the DB, after the specified time interval, the record (key/value) will be deleted.
 
