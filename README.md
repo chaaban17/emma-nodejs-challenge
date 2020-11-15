@@ -31,4 +31,4 @@ it is more or less an imitation of the interactive tutorial found at: https://tr
 
 The validation of the inquirer intercation is naive, if the user inputs a wrong command or doesn't type the correct form, the program will throw an error. However, it doesn't cover all the test cases. 
 
-every time the user should enter node main.js before calling a function. Remember this only the Dev side of the project.
+the user should run the code (node main.js) before calling a function. Remember this only the Dev side of the project.
